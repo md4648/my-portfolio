@@ -20,11 +20,12 @@ const MySkills = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="font-playfair font-semibold text-4xl mb-5">
+          <p className="font-playfair font-semibold text-5xl mb-5">
             MY <span className="text-red">SKILLS</span>
           </p>
           <LineGradient width={"w-1/3"} />
-          <p className="mt-10 mb-7">
+          {}
+          <p className="mt-10 mb-7 ">
           Skills That Drive My Passion
           </p>
         </motion.div>
@@ -66,7 +67,7 @@ const MySkills = () => {
           <div className="relative h-32">
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">01</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
+              <p className="font-playfair font-semibold text-4xl mt-3">
                 Web Development
               </p>
             </div>
@@ -74,7 +75,7 @@ const MySkills = () => {
             {/*break self closing Div*/}
           </div>
 
-          <p className="mt-5">
+          <p className="mt-5 text-3xl md:text-base">
           Adept at crafting dynamic websites with a strong focus on functionality, accessibility,
            and performance optimization, using a range of technologies like React, Tailwindcss, JavaScript, and
             backend frameworks.
@@ -95,8 +96,8 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">02</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
+              <p className="font-playfair font-semibold  text-4xl md:text-5xl">02</p>
+              <p className="font-playfair font-semibold text-4xl md:text-3xl  mt-3">
                 Mobile Application 
               </p>
             </div>
@@ -104,7 +105,7 @@ const MySkills = () => {
             {/*break self closing Div*/}
           </div>
 
-          <p className="mt-5">
+          <p className="mt-5 text-3xl md:text-base">
           Experienced in building mobile apps that seamlessly run on both iOS and Android platforms, 
           leveraging frameworks like React Native and Flutter to ensure a consistent and polished user experience.
           </p>
@@ -124,8 +125,8 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">03</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
+              <p className="font-playfair font-semibold  text-5xl">03</p>
+              <p className="font-playfair font-semibold  text-4xl md:text-3xl mt-3">
                 Graphics Design
               </p>
             </div>
@@ -133,7 +134,7 @@ const MySkills = () => {
             {/*break self closing Div*/}
           </div>
 
-          <p className="mt-5">
+          <p className="mt-5 text-3xl md:text-base">
           Passionate about visual storytelling, I create eye-catching 
           graphics and designs, from logos to user interfaces, that captivate
            users and elevate the overall aesthetics of digital content.

@@ -10,7 +10,7 @@ const Landing = ({ setSelectPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center md:h-full gap-16 py-10" //md is above mid screen
+      className="md:flex md:justify-between md:items-center md:h-full gap-16 py-36" //md is above mid screen
     >
       {/* 1st IMAGE SECTION b/c when size is decrease the image apear first*/}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
@@ -31,7 +31,7 @@ const Landing = ({ setSelectPage }) => {
           <img
             alt="profile"
             className="hover:filter hover:saturate-100 transition duration-500 z-10 w-full
-                    max-w-[400px] md:max-w-[600px] rounded-t-[700px] "
+                    max-w-[500px] md:max-w-[600px] rounded-t-[700px] mb-5 "
             src="assets/propic4.jpg"
           />
         )}
@@ -49,7 +49,7 @@ const Landing = ({ setSelectPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-6xl font-playfair z-10 text-center md:text-start">
+          <p className="text-6xl  font-playfair z-10 text-center md:text-start">
             MD {""}
             <span
               className="xs:relative  xs:text-deep-blue xs:font-semibold z-20 
@@ -59,7 +59,7 @@ const Landing = ({ setSelectPage }) => {
               Software
             </span>
           </p>
-          <p className="mt-10 mb-7 text-2xl text-center md:text-start paragraph ">
+          <p className="mt-16 mb-7 text-4xl md:text-2xl text-center md:text-start paragraph ">
           "Welcome ! I'm a passionate web and mobile app developer dedicated to turning innovative 
           ideas into interactive digital experiences. Explore my work and see how I can bring your vision to life."
           </p>
@@ -67,7 +67,7 @@ const Landing = ({ setSelectPage }) => {
 
         {/* CALL TO ACTIONS */}
         <motion.div
-          className="flex mt-5 justify-center md:justify-start"
+          className="flex mt-5 justify-center md:justify-start text-4xl md:text-2xl"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

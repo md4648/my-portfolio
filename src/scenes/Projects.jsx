@@ -49,7 +49,7 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl ">
+          <p className="font-playfair font-semibold text-5xl ">
             <span className="text-red">PRO</span>JECTS
             
 
@@ -59,7 +59,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <p className="mt-10 mb-10">
+        <p className="mt-10 mb-10 text-4xl md:text-base">
         Explore My Portfolio Projects
         </p>
       </motion.div>
@@ -68,7 +68,7 @@ const Projects = () => {
 
       <div className="flex justify-center">
         <motion.div
-          className="sm:grid sm:grid-cols-3"
+          className="sm:grid grid-cols-2 md:grid-cols-3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
