@@ -1,7 +1,22 @@
 import LineGradient from "../components/LineGradient";
 //import { useAnimate } from "framer-motion";
+import Animate from "react-simple-animate";
 import { motion } from "framer-motion";
 import useMediaQuery from "../hooks/useMediaQuery";
+import reactLogo from "../lotties/reactLogo.json";
+import nodeLogo from "../lotties/node.json"
+import htmlLogo from "../lotties/htmlLogo.json"
+import vueLogo from "../lotties/vueLogo.json"
+
+import reactNative from "../lotties/reactNative.json"
+import fireBase from "../lotties/firebaseLogo.json"
+import Flutter from "../lotties/flutterLogo.json"
+
+import mongodbLogo from "../lotties/mongodbLogo.json"
+import javaScriptLogo from "../lotties/javaScript.json"
+import Lottie from "lottie-react";
+
+
 const MySkills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
@@ -26,7 +41,7 @@ const MySkills = () => {
           <LineGradient width={"w-1/3"} />
           {}
           <p className="mt-10 mb-7 text-2xl md:text-base">
-          Skills That Drive My Passion
+            Skills That Drive My Passion
           </p>
         </motion.div>
 
@@ -51,13 +66,13 @@ const MySkills = () => {
       </div>
 
       {/* SKILLS */}
-      <div className="md:flex md:justify-between mt-16 gap-32">
+      <div className="md:flex md:justify-between mt-16 mb-16 gap-32">
         {/* EXPERIENCE */}
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount:0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
           transition={{ delay: 1, duration: 1.5 }}
           variants={{
             hidden: { opacity: 0, y: 50 },
@@ -76,8 +91,9 @@ const MySkills = () => {
           </div>
 
           <p className="mt-5 text-3xl md:text-base">
-          Adept at crafting dynamic websites with a strong focus on functionality, accessibility,
-           and performance optimization, using a range of technologies like React, Tailwindcss, JavaScript, and
+            Adept at crafting dynamic websites with a strong focus on
+            functionality, accessibility, and performance optimization, using a
+            range of technologies like React, Tailwindcss, JavaScript, and
             backend frameworks.
           </p>
         </motion.div>
@@ -98,7 +114,7 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold  text-5xl">02</p>
               <p className="font-playfair font-semibold text-4xl md:text-3xl  mt-3">
-                Mobile Application 
+                Mobile Application
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />{" "}
@@ -106,8 +122,9 @@ const MySkills = () => {
           </div>
 
           <p className="mt-5 text-3xl md:text-base">
-          Experienced in building mobile apps that seamlessly run on both iOS and Android platforms, 
-          leveraging frameworks like React Native and Flutter to ensure a consistent and polished user experience.
+            Experienced in building mobile apps that seamlessly run on both iOS
+            and Android platforms, leveraging frameworks like React Native and
+            Flutter to ensure a consistent and polished user experience.
           </p>
         </motion.div>
 
@@ -135,12 +152,70 @@ const MySkills = () => {
           </div>
 
           <p className="mt-5 text-3xl md:text-base">
-          Passionate about visual storytelling, I create eye-catching 
-          graphics and designs, from logos to user interfaces, that captivate
-           users and elevate the overall aesthetics of digital content.
+            Passionate about visual storytelling, I create eye-catching graphics
+            and designs, from logos to user interfaces, that captivate users and
+            elevate the overall aesthetics of digital content.
           </p>
         </motion.div>
       </div>
+
+
+
+<p className="text-2xl  font-playfair font-semibold text-red">some introduction to my skills ability and value is below. LET'S BUILD SOMETHING AWESOME TOGETHER</p>
+
+
+      <div className=" mt-16 sm:grid grid-cols-2 md:grid-cols-3 gap-y-4 ">
+        <div className="m-auto text-center">
+          <Lottie animationData={reactLogo} className="w-40" />
+          <p className="">React</p>
+        </div>
+
+        <div  className="m-auto text-center">
+          <Lottie animationData={nodeLogo} className="w-40" />
+          <p className="">Node js</p>
+        </div>
+
+        <div  className="m-auto text-center">
+          <Lottie animationData={javaScriptLogo} className="w-40" />
+          <p cla
+          ssName="">JavaScript</p>
+        </div>
+
+        <div  className="m-auto text-center">
+          <Lottie animationData={mongodbLogo} className="w-40" />
+          <p className="">MongoDB</p>
+        </div>
+
+        {/* <div  className="m-auto text-center">
+          <Lottie animationData={htmlLogo} className="w-40" />
+          <p className="">HTML&CSS</p>
+        </div> */}
+
+        <div  className="m-auto text-center">
+          <Lottie animationData={vueLogo} className="w-40" />
+          <p className="">VUE</p>
+        </div>
+
+        <div  className="m-auto text-center">
+          <Lottie animationData={reactNative} className="w-40" />
+          <p className="">React Native</p>
+        </div>
+
+        <div  className="m-auto text-center">
+          <Lottie animationData={Flutter} className="w-40" />
+          <p className="">Flutter</p>
+        </div>
+
+        <div  className="m-auto text-center">
+          <Lottie animationData={fireBase} className="w-40" />
+          <p className="">FireBase</p>
+        </div>
+      </div>
+
+
+      
+
+      
     </section>
   );
 };

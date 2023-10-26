@@ -53,15 +53,15 @@ const Landing = ({ setSelectPage }) => {
             MD {""}
             <span
               className="xs:relative  xs:text-deep-blue xs:font-semibold z-20 
-                xs:before:content-brush   before:absolute before:-left-[25px]
-                before:-top-[120px] before:z-[-1]  "
+                xs:before:content-brush   before:absolute before:-left-[20px]
+                before:-top-[95px] before:z-[-1]  "
             >
               Software
             </span>
           </p>
           <p className="mt-16 mb-7 text-4xl md:text-2xl text-center md:text-start paragraph ">
-          "Welcome ! I'm a passionate web and mobile app developer dedicated to turning innovative 
-          ideas into interactive digital experiences. Explore my work and see how I can bring your vision to life."
+          Welcome ! My name is Muluneh Debebe, I'm a passionate web and mobile app developer dedicated to turning innovative 
+          ideas into interactive digital experiences. Explore my work and see how I can bring your vision to life.
           </p>
         </motion.div>
 
@@ -78,7 +78,7 @@ const Landing = ({ setSelectPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
+            className="bg-gradient-rainbow text-deep-blue rounded-sm py-3 px-7 font-semibold
         hover:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectPage("contact")}
             href="#contact"
@@ -87,7 +87,7 @@ const Landing = ({ setSelectPage }) => {
           </AnchorLink>
 
           <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
+            className="rounded-r-sm bg-gradient-rainbow py-0.5 pr-0.5"
             onClick={() => setSelectPage("contact")}
             href="#contact"
           >

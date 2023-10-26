@@ -23,7 +23,7 @@ const Design = ({ title }) => {
     <motion.div variants={projectVariant} className="relative">
     <a href={`assets/${projcetTitle}o.jpg`} target="_blank">
       <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
+        <p className="text-2xl font-playfair">View</p>
         <p className="mt-7">
          🥇
         </p>

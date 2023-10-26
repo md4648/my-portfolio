@@ -10,7 +10,7 @@ const Footer=()=>{
                     MULUNEH DEBEBE
                 </p>
 
-                <p className="font-playfair text-md text-yellow">
+                <p className="font-playfair text-md text-yellow text-1xl md:text-base">
                 ©2023 MD. All Rights Reserved.
                 </p>
 

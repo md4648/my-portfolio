@@ -19,7 +19,7 @@ module.exports = {
       },
       backgroundImage:(theme)=>({
         "gradient-rainbow":
-        "linear-gradient(81.66deg,#00B5EE 7.21%,#FF45A4 45.05%, #FFBA00 78.07%)",
+        "linear-gradient(90deg, rgba(241,144,8,1) 0%, rgba(241,219,8,1) 50%, rgba(241,144,8,1) 100%)",
         "gradient-rainblue":
         "linear-gradient(90deg, #24CBFF 14.53%,#FC59FF 68.36%, #FFBD0C 117.73%)",
 
@@ -29,7 +29,7 @@ module.exports = {
         opensans:["Open Sans","sans-serif"]
       },
       content:{
-        brush:"url('./brush.png')",
+        brush:"url('../public/assets/brushh.png')", 
         person1:"url('../public/assets/solomon.png')",
         person2:"url('../public/assets/fenan2.png')",
         person3:"url('../public/assets/haile.png')"
