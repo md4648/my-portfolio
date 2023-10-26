@@ -17,15 +17,16 @@ const Link = ({ page, selectedPage, setSelectPage }) => {
   );
 };
 
-
-const Navbar = ({isTopOfPage, selectedPage, setSelectPage }) => {
+const Navbar = ({ isTopOfPage, selectedPage, setSelectPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery("(min-width:1000px)");
-  const navbarBackground=isTopOfPage?"":"bg-light-blue"
+  const navbarBackground = isTopOfPage ? "" : "bg-light-blue";
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-5xl md:text-3xl font-bold"><a href="#home">MD</a></h4>
+        <h4 className="font-playfair text-5xl md:text-3xl font-bold">
+          <a href="#home">MD</a>
+        </h4>
 
         {/* DESKTOP NAV */}
         {isAboveSmallScreens ? (
@@ -45,16 +46,18 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectPage }) => {
               selectedPage={selectedPage}
               setSelectPage={setSelectPage}
             />
+
             <Link
-              page="Testemonial" 
+              page="Design"
               selectedPage={selectedPage}
               setSelectPage={setSelectPage}
             />
-              <Link
-              page="Design" 
+            <Link
+              page="Testemonial"
               selectedPage={selectedPage}
               setSelectPage={setSelectPage}
             />
+
             <Link
               page="Contact"
               selectedPage={selectedPage}
@@ -98,13 +101,15 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectPage }) => {
                 selectedPage={selectedPage}
                 setSelectPage={setSelectPage}
               />
+
               <Link
-                page="Testemonial"
+                page="Design"
                 selectedPage={selectedPage}
                 setSelectPage={setSelectPage}
               />
-                <Link
-                page="Design"
+
+              <Link
+                page="Testemonial"
                 selectedPage={selectedPage}
                 setSelectPage={setSelectPage}
               />
@@ -114,7 +119,6 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectPage }) => {
                 selectedPage={selectedPage}
                 setSelectPage={setSelectPage}
               />
-            
             </div>
           </div>
         )}
