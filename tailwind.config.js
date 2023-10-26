@@ -10,6 +10,10 @@ module.exports = {
         yellow:"#FDCC49",
         grey:"#ededed",
         "deep-blue":"#010026",
+        "light-blue":"#27374D",
+        "light-green":"#262A56",
+         
+
         "dark-gray":"#757575",
         "opaque-black":"rgba(0,0,0,0,0.35"
       },
@@ -27,7 +31,7 @@ module.exports = {
       content:{
         brush:"url('./brush.png')",
         person1:"url('../public/assets/solomon.png')",
-        person2:"url('../public/assets/fenan3.png')",
+        person2:"url('../public/assets/fenan2.png')",
         person3:"url('../public/assets/haile.png')"
       }
     },

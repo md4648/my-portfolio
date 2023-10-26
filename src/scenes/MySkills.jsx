@@ -25,7 +25,7 @@ const MySkills = () => {
           </p>
           <LineGradient width={"w-1/3"} />
           {}
-          <p className="mt-10 mb-7 ">
+          <p className="mt-10 mb-7 text-2xl md:text-base">
           Skills That Drive My Passion
           </p>
         </motion.div>
@@ -96,7 +96,7 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold  text-4xl md:text-5xl">02</p>
+              <p className="font-playfair font-semibold  text-5xl">02</p>
               <p className="font-playfair font-semibold text-4xl md:text-3xl  mt-3">
                 Mobile Application 
               </p>

@@ -1,7 +1,7 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 const Testemonial = () => {
-  const testimonialStyles = `mx-auto relative max-w-[400px] h-[350px] flex flex-col
+  const testimonialStyles = `mx-auto relative max-w-[500px] h-[400px] md:max-w-[400px] md:h-[350px] flex flex-col
     justify-end p-16 mt-48 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 `;
 
   return (
@@ -18,19 +18,19 @@ const Testemonial = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <p className="font-playfair font-semibold text-4xl mb-5 text-red">
+        <p className="font-playfair font-semibold text-5xl mb-5 text-red">
           TESTIMONIALS
         </p>
         <LineGradient width={" mx-auto w-2/4"} />
-        <p className="mt-10 mb-7 ">
+        <p className="mt-10 mb-7 text-2xl md:text-base ">
         Words from Satisfied Clients
         </p>
       </motion.div>
 
       {/*TESTIMONIAL */}
-      <div className="md:flex md:justify-between  gap-8">
+      <div className="md:flex md:justify-between  gap-8 ">
         <motion.div
-          className={`bg-blue ${testimonialStyles}before:content-person1` }
+          className={`bg-blue ${testimonialStyles}before:content-person1 ` }
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.5 }}
@@ -40,8 +40,8 @@ const Testemonial = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">"</p>
-          <p className="text-center text-xl">
+          <p className="font-playfair text-5xl">"</p>
+          <p className="text-center text-2xl md:text-base">
           I was thoroughly impressed with your web development skills 
            your work on my website exceeded all expectations. You truly are
             a master of your craft!"The quick brown fox jumping over the lazy dog
@@ -59,10 +59,11 @@ const Testemonial = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl ">"</p>
-          <p className="text-center text-xl ">
-          Your graphic design work is pure magic 
-          you turned my vision into a visual masterpiece.
+          <p className="font-playfair text-5xl">"</p>
+          <p className="text-center text-2xl md:text-base ">
+          Your graphic design work is sheer magic; 
+          you turned my vision into a mesmerizing and 
+          enchanting visual masterpiece.
           </p>
         </motion.div>
 
@@ -77,8 +78,8 @@ const Testemonial = () => {
             visible: { opacity: 1, scale: 1 },
           }}
         >
-          <p className="font-playfair text-6xl">"</p>
-          <p className="text-center text-xl">
+          <p className="font-playfair text-5xl">"</p>
+          <p className="text-center text-2xl md:text-base">
           Your mobile application development expertise has taken my business to
           the next level. The app you built is not only user-friendly but also
           beautifully designed
